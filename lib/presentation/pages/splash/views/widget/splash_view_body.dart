@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:reed_books_api_mvvm/core/const.dart';
-import 'package:reed_books_api_mvvm/presentation/page/splash/views/widget/splash_animation.dart';
+import 'package:reed_books_api_mvvm/presentation/pages/home/view/home_page.dart';
+import 'package:reed_books_api_mvvm/presentation/pages/splash/views/widget/splash_animation.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
@@ -17,6 +20,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
   void initState() {
     super.initState();
     initSlidingAnamation();
+    navigattoHomePage();
   }
 
   @override
@@ -54,5 +58,11 @@ class _SplashViewBodyState extends State<SplashViewBody>
       end: Offset.zero,
     ).animate(animationController);
     animationController.forward();
+  }
+
+  void navigattoHomePage() {
+    Future.delayed(Duration(seconds: 3), () {
+      Get.to(() => HomePage(), transition: Transition.zoom);
+    });
   }
 }

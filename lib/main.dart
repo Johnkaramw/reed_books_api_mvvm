@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:reed_books_api_mvvm/presentation/page/splash/views/splash_page.dart';
+import 'package:reed_books_api_mvvm/presentation/pages/splash/views/splash_page.dart';
 
 void main() {
   runApp(ReedBook());
