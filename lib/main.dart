@@ -13,7 +13,9 @@ class ReedBook extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.light().copyWith(scaffoldBackgroundColor: Colors.purple),
+      theme: ThemeData.light().copyWith(
+        scaffoldBackgroundColor: const Color.fromARGB(243, 255, 93, 19),
+      ),
       home: SplashPage(),
     );
   }

@@ -17,5 +17,8 @@ class ConstSiz {
   static const double siz12 = 12.0;
   static const double siz14 = 14.0;
   static const double siz16 = 16.0;
+  static const double siz30 = 30.0;
+  static const double siz40 = 40.0;
+  static const double siz50 = 50.0;
   static const double siz200 = 200.0;
 }
